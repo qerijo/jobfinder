@@ -1,8 +1,7 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
-const mode =
-  process.env.NODE_ENV === 'production' ? 'production' : 'development'
+const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
 module.exports = {
   mode: mode,
@@ -11,10 +10,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

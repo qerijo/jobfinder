@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production  webpack --watch"
+    "build": "cross-env NODE_ENV=production webpack "
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

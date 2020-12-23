@@ -1,0 +1,61 @@
+.root li {
+  margin-bottom: 10px;
+}
+
+.detailedInfo {
+  padding: 1.25rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 4px 0px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.salaryWrapper > span {
+  font-size: 22px;
+  margin-right: 10px;
+}
+.buttonContainer {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.buttonLink {
+  font-size: 19px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: none;
+}
+.buttonLink:hover {
+  color: red;
+}
+.buttonIcon {
+  height: 12px;
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+.employerName {
+  margin-bottom: 5px;
+}
+
+.employerLink {
+  color: #09f;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+  outline: none;
+  transition: 0.3s all;
+}
+.employerLink:hover {
+  color: red;
+}
+
+.vacancySection {
+  margin-bottom: 30px;
+}

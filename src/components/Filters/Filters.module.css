@@ -1,0 +1,16 @@
+.root {
+  margin: 0 auto;
+}
+
+.filters {
+  width: 100%;
+  background: #f6f6f6;
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.filters > *:not(:last-child) {
+  margin-right: 15px;
+  width: 25%;
+}

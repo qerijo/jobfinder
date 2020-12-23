@@ -1,0 +1,7 @@
+.root {
+  width: 100%;
+  max-width: 1000px;
+  padding: 50px 50px;
+  margin: 0 auto;
+  flex: 1 0 auto;
+}

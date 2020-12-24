@@ -14,9 +14,7 @@ const Filters = ({ areas, setQuery }) => {
     if (data.area) {
       data.area = findTownIdByName(areas, data.area)
     }
-    if (!data.area) {
-      delete data.area
-    }
+
     setQuery({ ...data })
   }
 

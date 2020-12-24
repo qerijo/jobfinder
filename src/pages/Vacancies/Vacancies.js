@@ -15,13 +15,13 @@ const Vacancies = ({ areas }) => {
 
   const { data, isLoading, isError } = useData(configEndpoint.getVacancies, query, [query])
 
+  const vacancies = isError ? [] : data?.items
+
   return (
     <>
       <Layout>
         <Filters areas={areas} query={query} setQuery={setQuery} />
-        <ContentStatus isLoading={isLoading} isError={isError}>
-          {() => <VacanciesList vacancies={data?.items} />}
-        </ContentStatus>
+        <ContentStatus isLoading={isLoading}>{() => <VacanciesList vacancies={vacancies} />}</ContentStatus>
       </Layout>
     </>
   )

@@ -4,8 +4,8 @@ import s from './VacanciesList.module.css'
 
 const VacanciesList = ({ vacancies }) => (
   <>
-    {vacancies?.length === 0 && <div className={s.notFoundMsg}>По запросу ничего не найдено</div>}
-    <div className={s.vacanciesWrapper}>
+    {vacancies?.length === 0 && <div className={s.not_found_msg}>По запросу ничего не найдено</div>}
+    <div className={s.root}>
       {vacancies?.map((vac) => (
         <Vacancy
           key={vac.id}

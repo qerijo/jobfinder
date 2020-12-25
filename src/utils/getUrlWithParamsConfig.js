@@ -1,6 +1,6 @@
 import config from '../config'
 
-function getUrlWithParamsConfig(endpointConfig, params) {
+const getUrlWithParamsConfig = (endpointConfig, params) => {
   const { method, uri } = config.client.endpoint[endpointConfig]
   let body = {}
 

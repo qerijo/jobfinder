@@ -8,8 +8,8 @@ const Vacancy = ({ id, position, company, city, published, responsibility }) => 
     <p className={s.position} onClick={() => navigate(`${links.VACANCIES}/${id}`)} aria-hidden="true">
       {position}
     </p>
-    <p className={s.companyBlock}>
-      <span className={s.companyName}>{company}</span>
+    <p className={s.section}>
+      <span className={s.company_name}>{company}</span>
       <span>{city}</span>
     </p>
     <p>{responsibility}</p>

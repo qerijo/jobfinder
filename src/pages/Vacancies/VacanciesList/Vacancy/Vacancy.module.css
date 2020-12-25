@@ -17,11 +17,11 @@
   color: red;
 }
 
-.companyBlock {
+.section {
   display: flex;
   flex-wrap: wrap;
 }
-.companyName {
+.company_name {
   color: red;
   padding-right: 20px;
 }

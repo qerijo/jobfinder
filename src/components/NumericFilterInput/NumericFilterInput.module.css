@@ -1,0 +1,18 @@
+.root {
+  position: relative;
+}
+.error_msg {
+  position: absolute;
+  top: -22px;
+  color: red;
+}
+.root input {
+  height:100%
+}
+
+.no_spin_button::-webkit-inner-spin-button,::-webkit-outer-spin-button  {
+  -webkit-appearance: none;
+  margin: 0;
+ -moz-appearance: textfield;
+}
+

@@ -18,6 +18,7 @@ module.exports = {
     'react/no-unescaped-entities': 0,
     'react/jsx-props-no-spreading': 1,
     'no-console': 1,
+    'no-shadow': 1,
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js'] }],
     'import/extensions': [
       'error',

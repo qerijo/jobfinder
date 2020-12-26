@@ -1,0 +1,20 @@
+.root {
+  min-width: 150px;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  padding: 0 35px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: none;
+}
+
+.root:hover {
+  color: black;
+}

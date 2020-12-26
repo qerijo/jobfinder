@@ -1,0 +1,27 @@
+.vacancy {
+  padding: 1.25rem;
+  position: relative;
+}
+
+.vacancy:nth-child(2n) {
+  background-color: rgb(242, 242, 242);
+}
+
+.position {
+  margin: 0px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.position:hover {
+  color: red;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company_name {
+  color: red;
+  padding-right: 20px;
+}

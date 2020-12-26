@@ -1,0 +1,65 @@
+.root li {
+  margin-bottom: 10px;
+}
+
+.go_back_container {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.go_back_link {
+  font-size: 19px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: none;
+}
+.go_back_link:hover {
+  color: red;
+}
+.go_back_icon {
+  height: 12px;
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+.detailed_info {
+  padding: 1.25rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 4px 0px;
+}
+.section {
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.employerName {
+  margin-bottom: 5px;
+}
+
+.employer_link {
+  color: #09f;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+  outline: none;
+  transition: 0.3s all;
+}
+.employer_name:hover {
+  color: red;
+}
+
+.salary_block > span {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+
+

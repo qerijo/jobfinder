@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './Button.module.css'
 
-const Button = ({ children, ...props }) => (
+const Button = ({ children, type, ...props }) => (
   // eslint-disable-next-line react/button-has-type
-  <button className={s.root} {...props}>
+  <button type={type} className={s.root} {...props}>
     {children}
   </button>
 )

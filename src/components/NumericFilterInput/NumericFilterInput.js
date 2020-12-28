@@ -3,7 +3,7 @@ import FilterInput from '../FilterInput/FilterInput'
 import s from './NumericFilterInput.module.css'
 
 const NumericFilterInput = ({ name, invalid, message, ...rest }) => {
-  const patternMsg = message || 'Ввводить можно только цифры'
+  const patternMsg = message || 'Вводить можно только цифры'
   return (
     <div className={s.root}>
       {invalid?.message && <span className={s.error_msg}>{invalid?.message}</span>}

@@ -10,7 +10,7 @@ import Layout from '../../components/Layout/Layout'
 import VacanciesList from './VacanciesList/VacanciesList'
 import ContentStatus from '../../components/ContentStatus/ContentStatus'
 
-const Vacancies = ({ areas }) => {
+const Vacancies = () => {
   const [query, setQuery] = useState({})
 
   const { data, isLoading, isError } = useData(configEndpoint.getVacancies, query, [query])
@@ -18,10 +18,12 @@ const Vacancies = ({ areas }) => {
   const vacancies = isError ? [] : data?.items
 
   return (
-    <Layout>
-      <Filters areas={areas} query={query} setQuery={setQuery} />
-      <ContentStatus isLoading={isLoading}>{() => <VacanciesList vacancies={vacancies} />}</ContentStatus>
-    </Layout>
+    <>
+      <Layout>
+        <Filters query={query} setQuery={setQuery} />
+        <ContentStatus isLoading={isLoading}>{() => <VacanciesList vacancies={vacancies} />}</ContentStatus>
+      </Layout>
+    </>
   )
 }
 

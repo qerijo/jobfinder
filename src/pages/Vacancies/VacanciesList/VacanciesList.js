@@ -1,3 +1,4 @@
+import React from 'react'
 import Vacancy from './Vacancy/Vacancy'
 import s from './VacanciesList.module.css'
 

@@ -18,10 +18,12 @@ const Vacancies = () => {
   const vacancies = isError ? [] : data?.items
 
   return (
-    <Layout>
-      <Filters areas={areas} query={query} setQuery={setQuery} />
-      <ContentStatus isLoading={isLoading}>{() => <VacanciesList vacancies={vacancies} />}</ContentStatus>
-    </Layout>
+    <>
+      <Layout>
+        <Filters query={query} setQuery={setQuery} />
+        <ContentStatus isLoading={isLoading}>{() => <VacanciesList vacancies={vacancies} />}</ContentStatus>
+      </Layout>
+    </>
   )
 }
 

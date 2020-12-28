@@ -1,4 +1,5 @@
 import { navigate } from 'hookrouter'
+import React from 'react'
 import Button from '../../components/Button/Button'
 import s from './NotFound.module.css'
 

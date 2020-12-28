@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8080
 app.use(express.static(path.join(__dirname, 'build')))
 
 app.use('*', (req, resp) => {
+  console.log('HEY', req.baseUrl)
   hookrouter.setPath(req.baseUrl)
   const pathIndexHTML = path.join(process.cwd(), 'build', 'index.html')
   resp.sendFile(pathIndexHTML)

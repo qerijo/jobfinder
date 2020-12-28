@@ -1,21 +1,17 @@
 /* eslint no-param-reassign: ["error", { "props": true, "ignorePropertyModificationsFor": ["data"] }] */
 import { useForm, Controller } from 'react-hook-form'
-import findTownIdByName from '../../utils/findTownIdByName'
 import removeEmptyFields from '../../utils/removeEmptyFields'
 import Button from '../Button/Button'
 import FilterInput from '../FilterInput/FilterInput'
 import NumericFilterInput from '../NumericFilterInput/NumericFilterInput'
+import RegionsSearcher from '../RegionSearcher/RegionsSearcher'
 import s from './Filters.module.css'
 
-const Filters = ({ areas, setQuery }) => {
+const Filters = ({ setQuery }) => {
   const { register, handleSubmit, control } = useForm()
 
   const onSubmit = (data) => {
     removeEmptyFields(data)
-    if (data.area) {
-      data.area = findTownIdByName(areas, data.area)
-    }
-
     setQuery({ ...data })
   }
 
@@ -23,7 +19,12 @@ const Filters = ({ areas, setQuery }) => {
     <div className={s.root}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className={s.filters}>
-          <FilterInput type="text" placeholder="Город" name="area" autoComplete="off" register={register} />
+          <Controller
+            name="area"
+            render={(props) => <RegionsSearcher onChange={({ value }) => props.onChange(value)} />}
+            control={control}
+            register={register}
+          />
           <FilterInput type="text" placeholder="Ключевые слова" name="text" autoComplete="off" register={register} />
           <Controller
             name="salary"
@@ -47,5 +48,3 @@ const Filters = ({ areas, setQuery }) => {
 }
 
 export default Filters
-
-const filterInputNumeric = (Cpomponent) => {}

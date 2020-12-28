@@ -26,7 +26,7 @@ const config = {
       [configEndpoint.getAreas]: {
         method: 'GET',
         uri: {
-          pathname: '/areas',
+          pathname: '/suggests/areas',
         },
       },
     },

@@ -18,6 +18,10 @@ const customStyles = {
     ...provided,
     color: '#4b4b4b',
   }),
+  placeholder: (provided, state) => ({
+    ...provided,
+    fontSize: '17px',
+  }),
 }
 
 const RegionsSearcher = ({ onChange }) => {

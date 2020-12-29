@@ -1,5 +1,6 @@
 .root {
   margin: 0 auto;
+  width:100%;
 }
 
 .filters {
@@ -7,10 +8,13 @@
   background: #f6f6f6;
   display: flex;
   margin-bottom: 25px;
-  justify-content: space-between;
+
 }
 
 .filters > *:not(:last-child) {
-  margin-right: 15px;
-  width: 25%;
+  margin-right: 15px; 
+}
+
+.search_btn {
+  margin-left: auto !important;
 }

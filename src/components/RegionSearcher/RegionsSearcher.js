@@ -6,6 +6,7 @@ const customStyles = {
   control: (provided, state) => ({
     ...provided,
     height: '100%',
+    minWidth: '180px',
     '&:hover': { borderColor: 'gray' },
     boxShadow: 'none',
     borderColor: '#ccc',
@@ -22,6 +23,7 @@ const customStyles = {
     ...provided,
     fontSize: '17px',
   }),
+  indicatorSeparator: (styles) => ({ display: 'none' }),
 }
 
 const RegionsSearcher = ({ onChange }) => {

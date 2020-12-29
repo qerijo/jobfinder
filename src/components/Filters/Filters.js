@@ -3,9 +3,9 @@ import { useForm, Controller } from 'react-hook-form'
 import removeEmptyFields from '../../utils/removeEmptyFields'
 import Button from '../Button/Button'
 import FilterInput from '../FilterInput/FilterInput'
-import NumericFilterInput from '../NumericFilterInput/NumericFilterInput'
 import RegionsSearcher from '../RegionSearcher/RegionsSearcher'
 import s from './Filters.module.css'
+import SalaryFilterInput from '../SalaryFilterInput/SalaryFilterInput'
 
 const Filters = ({ setQuery }) => {
   const { register, handleSubmit, control } = useForm()
@@ -26,21 +26,10 @@ const Filters = ({ setQuery }) => {
             register={register}
           />
           <FilterInput type="text" placeholder="Ключевые слова" name="text" autoComplete="off" register={register} />
-          <Controller
-            name="salary"
-            control={control}
-            render={({ value, name }, { invalid }) => (
-              <NumericFilterInput
-                placeholder="Уровень дохода"
-                autoComplete="off"
-                invalid={invalid}
-                value={value}
-                name={name}
-                register={register}
-              />
-            )}
-          />
-          <Button type="submit">Найти</Button>
+          <SalaryFilterInput register={register} control={control} />
+          <Button type="submit" className={s.search_btn}>
+            Найти
+          </Button>
         </div>
       </form>
     </div>

@@ -1,0 +1,6 @@
+.root {
+  display: flex;
+}
+.numeric_filter {
+  margin-right: 15px;
+}

@@ -1,14 +1,14 @@
 import { useState } from 'react'
-
 import useData from '../../hooks/getData'
-import Filters from '../../components/Filters/Filters'
 
 import { configEndpoint } from '../../config'
+import ContentStatus from '../../components/ContentStatus/ContentStatus'
+
+import Filters from '../../components/Filters/Filters'
 
 import Layout from '../../components/Layout/Layout'
 
 import VacanciesList from './VacanciesList/VacanciesList'
-import ContentStatus from '../../components/ContentStatus/ContentStatus'
 
 const Vacancies = () => {
   const [query, setQuery] = useState({})

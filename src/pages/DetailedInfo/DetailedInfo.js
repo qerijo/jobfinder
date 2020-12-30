@@ -1,9 +1,11 @@
 import useData from '../../hooks/getData'
 
 import { configEndpoint } from '../../config'
-import Layout from '../../components/Layout/Layout'
 
 import ContentStatus from '../../components/ContentStatus/ContentStatus'
+
+import Layout from '../../components/Layout/Layout'
+
 import Info from './Info/Info'
 
 const DetailedInfo = ({ id }) => {
